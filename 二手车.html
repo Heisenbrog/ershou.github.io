@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-size: 0;
+        }
+
+        .bigbox {
+            width: 1520px;
+            margin: 0 auto;
+        }
+
+        .dhl {
+            width: 1200px;
+            height: 70px;
+            margin: 0 auto;
+            /* border: 1px solid #000; */
+        }
+
+        .left {
+            margin-top: 13px;
+            width: 207px;
+            height: 42px;
+            float: left;
+            /* border: 1px solid #000; */
+        }
+
+        .left>a {
+            display: inline-block;
+            width: 130px;
+            height: 42px;
+            margin-right: 21px;
+        }
+
+        .left>a>img {
+            width: 130px;
+            height: 42px;
+        }
+
+        .left>img {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+            line-height: 42px;
+            margin-top: 16px;
+            vertical-align: top;
+        }
+
+        .left>span {
+            display: inline-block;
+            margin-top: 14px;
+            font-size: 14px;
+            color: #333;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .right {
+            margin-top: 13px;
+            float: right;
+            width: 734px;
+            height: 47px;
+            /* border: 1px solid #000; */
+        }
+
+        .right>ul {
+            width: 782px;
+            height: 47px;
+        }
+
+        .right>ul>li {
+            display: inline-block;
+            color: #333333;
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 50px;
+            padding: 12px 0;
+        }
+
+        .dh {
+            padding: 12px 0;
+            font-size: 16px;
+            font-weight: 400;
+            display: inline-block;
+            height: 47px;
+        }
+
+        .dh>span {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            color: #5685FE;
+            margin-left: 4px;
+        }
+
+        .esc {
+            width: 100%;
+        }
+
+        .tp {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 300px;
+            background-image: url(https://www.tf2sc.cn/static/img/%E8%93%9D%E8%89%B2%E8%83%8C%E6%99%AF.png);
+        }
+
+        .tp>img {
+            position: absolute;
+            top: 44px;
+            right: 98px;
+            width: 420px;
+            height: 229px;
+            z-index: 3;
+        }
+
+        .l1 {
+            width: 1200px;
+            height: 50px;
+            margin: 0px auto;
+            font-size: 40px;
+        }
+
+        .l1>.shang {
+            margin-bottom: 20px;
+            margin-top: 70px;
+            font-size: 40px;
+        }
+
+        .zhong {
+            width: 640px;
+            height: 56px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            /* border: 1px solid #000; */
+        }
+
+        .zhong>input {
+            margin-left: 20px;
+            width: 490px;
+            height: 100%;
+            border: none;
+            font-size: 18px;
+            outline: none;
+        }
+
+        .zhong>button {
+            width: 128px;
+            height: 100%;
+            background: #5685FE;
+            border-radius: 0px 8px 8px 0px;
+            border: 1px solid #F0F0F0;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+
+        .xia {
+            margin: 0 auto;
+            width: 1200px;
+            height: 301px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 20px 0px rgba(170, 170, 216, 0.4);
+            border-radius: 14px;
+            box-sizing: border-box;
+            padding-top: 50px;
+        }
+
+        .left1 {
+            margin-top: 6px;
+            float: left;
+            width: 535px;
+            height: 251px;
+            /* border: 1px solid #000; */
+        }
+
+        .right1 {
+            margin-top: 6px;
+            width: 586px;
+            height: 251px;
+            float: right;
+            /* border: 1px solid #000; */
+        }
+
+        .l2,
+        .l4 {
+            width: 535px;
+            height: 32px;
+        }
+
+        .l2>div:nth-child(1),
+        .l4>div:nth-child(1) {
+            display: inline-block;
+            width: 10px;
+            height: 30px;
+            background: #5685FE;
+        }
+
+        .l2>div:nth-child(2),
+        .l4>div:nth-child(2) {
+            display: inline-block;
+            line-height: 32px;
+            font-weight: 600;
+            font-size: 24px;
+            margin-left: 20px;
+            vertical-align: top;
+        }
+
+        .l3 {
+            /* border: 1px solid #000; */
+            margin-left: 40px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        .shang1 {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+
+        .shang1>a {
+            display: inline-block;
+            /* border: 1px solid #000; */
+            width: 71px;
+            height: 30px;
+            font-size: 14px;
+            font-weight: 400;
+            margin-right: 27px;
+            color: #333;
+        }
+
+        .shang1>a>img {
+            display: inline-block;
+            width: 29px;
+            height: 30px;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+
+        .shang1>a>span {
+            display: inline-block;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        .zhong1 {
+            margin-bottom: 30px;
+            width: 100%;
+            height: 34px;
+        }
+
+        .xia1 {
+
+            width: 100%;
+            height: 34px;
+        }
+
+        .zhong1>span,
+        .xia1>span {
+            display: inline-block;
+            width: 90px;
+            height: 34px;
+            background: #F5F7FE;
+            border-radius: 17px;
+            line-height: 34px;
+            text-align: center;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+
+        .l5 {
+            margin-top: 27px;
+            width: 331px;
+            height: 40px;
+            box-sizing: border-box;
+            padding-left: 19px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            border: 1px solid #F0F0F0;
+            margin-bottom: 40px;
+        }
+
+        .l5>input {
+            /* display: inline-block; */
+            font-size: 14px;
+            height: 100%;
+            width: 200px;
+            border: none;
+            outline: none;
+            vertical-align: middle;
+        }
+
+        .l5>button {
+            /* display: inline-block; */
+            font-size: 14px;
+            font-weight: 400;
+            width: 96px;
+            height: 40px;
+            background: #5685FE;
+            border-radius: 0px 8px 8px 0px;
+            border: 1px solid #F0F0F0;
+            color: #FFFFFF;
+            vertical-align: middle;
+        }
+
+        .l6 {
+            width: 333px;
+            height: 56px;
+            margin-left: 30px;
+            /* border: 1px solid #000; */
+        }
+
+        .z1 {
+            text-align: center;
+            display: inline-block;
+            width: 164px;
+            height: 20px;
+            line-height: 56px;
+        }
+
+        .r1 {
+            text-align: center;
+            display: inline-block;
+            width: 164px;
+            height: 20px;
+            line-height: 56px;
+        }
+
+        .z1>img {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+        }
+
+        .r1>img {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+        }
+
+        .z1>span {
+            font-size: 14px;
+            font-weight: 400;
+            vertical-align: middle;
+        }
+
+        .r1>span {
+            font-size: 14px;
+            font-weight: 400;
+            vertical-align: middle;
+        }
+
+        .z2 {
+            display: inline-block;
+            width: 1px;
+            height: 29px;
+            background: #D8E3FF;
+            vertical-align: middle;
+        }
+
+        .sp {
+            width: 1200px;
+            margin: 64px auto;
+            /* border: 1px solid #000; */
+        }
+
+        .sp>.shang2 {
+            width: 1200px;
+            height: 32px;
+        }
+
+        .left2 {
+            float: left;
+            width: 105px;
+            height: 100%;
+        }
+
+        .ls {
+            display: inline-block;
+            width: 10px;
+            height: 30px;
+            background: #5685FE;
+            vertical-align: bottom;
+        }
+
+        .left2>span {
+            line-height: 32px;
+            font-weight: 600;
+            font-size: 24px;
+            margin-left: 20px;
+            vertical-align: bottom;
+        }
+
+        .right2 {
+            float: right;
+            width: 65px;
+            height: 100%;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .right2>span {
+            display: inline-block;
+            font-size: 12px;
+            color: #666666;
+            vertical-align: top;
+        }
+
+        .right2>img {
+            display: inline-block;
+            text-align: center;
+            width: 17px;
+            height: 17px;
+            line-height: 32px;
+            margin-top: 7px;
+        }
+
+        .sp::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .xia2 {
+            width: 1200px;
+            padding: 30px 0 70px 0;
+        }
+
+        .xia2>ul {
+            width: 1243px;
+        }
+
+        .xia2>ul>li {
+            display: inline-block;
+            width: 277px;
+            height: 358px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            /* border: 1px solid #000; */
+            box-sizing: border-box;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        .th {
+            width: 275px;
+            height: 208px;
+            position: relative;
+        }
+
+        .xia2>ul>li>.th>img {
+            width: 275px;
+            height: 208px;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .a1 {
+            background: linear-gradient(90deg, #FF1766 0%, #FF2A23 100%);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #FFFFFF;
+            font-size: 12px;
+            width: 64px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 0px 4px 4px 0px;
+        }
+
+        .xia3 {
+            width: 100%;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        .xia3>span:nth-child(1) {
+            display: block;
+            width: 257px;
+            line-height: 26px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .xia3>span:nth-child(2) {
+            display: block;
+            width: 266px;
+            height: 20px;
+            font-size: 14px;
+            color: #999999;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+
+        .xia3>span:nth-child(3) {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-right: 10px;
+            display: block;
+            color: #E73424;
+        }
+
+        .xwzx {
+            width: 100%;
+            height: 32px;
+            /* margin-top: 70px; */
+            margin: 30px 0 70px 0;
+            /* border: 1px solid #000; */
+        }
+
+        .q1 {
+            float: left;
+            height: 32px;
+        }
+
+
+        .q2 {
+            display: inline-block;
+            width: 10px;
+            height: 30px;
+            background: #5685FE;
+        }
+
+
+        .q1>span {
+            display: inline-block;
+            line-height: 32px;
+            font-weight: 600;
+            font-size: 24px;
+            margin-left: 20px;
+            color: #666666;
+            vertical-align: top;
+        }
+
+        .q3 {
+            float: right;
+            height: 32px;
+        }
+
+
+        .q3>span {
+            display: inline-block;
+            font-size: 12px;
+            color: #666666;
+            line-height: 32px;
+            vertical-align: top;
+        }
+
+        .q3>img {
+            line-height: 32px;
+            width: 17px;
+            height: 17px;
+            margin-top: 7px;
+            vertical-align: top;
+        }
+
+        .xc {
+            padding: 30px 0 70px 0;
+            width: 100%;
+            height: 32px;
+        }
+
+        .q4 {
+            float: left;
+            height: 32px;
+        }
+
+        .q5 {
+            display: inline-block;
+            width: 10px;
+            height: 30px;
+            background: #5685FE;
+        }
+
+        .q4>span {
+            display: inline-block;
+            line-height: 32px;
+            font-weight: 600;
+            font-size: 24px;
+            margin-left: 20px;
+            color: #666666;
+            vertical-align: top;
+        }
+
+        .q6 {
+            float: right;
+            height: 32px;
+        }
+
+        .q6>span {
+            display: inline-block;
+            font-size: 12px;
+            color: #666666;
+            line-height: 32px;
+            vertical-align: top;
+        }
+
+        .q6>img {
+            line-height: 32px;
+            width: 17px;
+            height: 17px;
+            margin-top: 7px;
+            vertical-align: top;
+        }
+
+        .ss1 {
+            width: 100%;
+            /* height: 558px; */
+        }
+
+        .zp1 {
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 70px;
+        }
+
+        .zp1>img,
+        .zp2>img {
+            width: 380px;
+            height: 285px;
+            border-radius: 8px;
+        }
+
+        .xia4,
+        .xia5 {
+            margin: 20px;
+            width: 339px;
+            height: 152px;
+            /* border: 1px solid #000; */
+        }
+
+        .xia4>div:nth-child(1),
+        .xia5>div:nth-child(1) {
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 14px;
+            height: 52px;
+        }
+
+        .xia4>div:nth-child(2),
+        .xia5>div:nth-child(2) {
+            font-size: 14px;
+            color: #666666;
+            line-height: 20px;
+            height: 40px;
+            margin-bottom: 26px;
+        }
+
+        .xia4>div:nth-child(3),
+        .xia5>div:nth-child(3) {
+            color: #999999;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        .zp2 {
+            float: left;
+            margin-bottom: 70px;
+        }
+
+        .bottom {
+            width: 100%;
+            /* border: 1px solid #000; */
+        }
+
+        .bottom1 {
+            height: 70px;
+            background-color: #242632;
+        }
+
+        .aaa1 {
+            width: 1200px;
+            height: 70px;
+            margin: 0 auto;
+            line-height: 70px;
+        }
+
+        .aaa1>img {
+            width: 70px;
+            height: 28px;
+            line-height: 70px;
+            vertical-align: middle;
+        }
+
+        .sss1 {
+            line-height: 70px;
+            display: inline-block;
+            width: 1px;
+            height: 21px;
+            background: #DEE3EC;
+            margin: 0 8px;
+            vertical-align: middle;
+        }
+
+        .sss2 {
+            line-height: 70px;
+            display: inline-block;
+            font-size: 10px;
+            line-height: 12px;
+            color: #DEE3EC;
+            margin-right: 277px;
+            vertical-align: middle;
+        }
+
+        .aaa1>span {
+            display: inline-block;
+            margin-right: 50px;
+            color: #F9F9F9;
+            line-height: 70px;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        .bottom2 {
+            height: 350px;
+            background-color: #2A2C37;
+        }
+
+        .center {
+            width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            color: #D4D4D4;
+        }
+
+        .qqq1-top {
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 60px;
+            height: 216px;
+            font-size: 14px;
+        }
+
+        .zuo {
+            float: left;
+            width: 260px;
+            height: 136px;
+            line-height: 136px;
+            vertical-align: middle;
+        }
+
+        .yyy1 {
+            display: inline-block;
+            width: 260px;
+            height: 52px;
+
+
+        }
+
+        .yyy2 {
+            width: 100%;
+            height: 20px;
+            font-size: 14px;
+            color: #D4D4D4;
+            font-weight: 400;
+            margin-bottom: 13px;
+        }
+
+        .yyy3 {
+            width: 100%;
+            height: 20px;
+            font-size: 14px;
+            color: #D4D4D4;
+            font-weight: 400;
+        }
+
+        .you {
+            float: right;
+            width: 384px;
+            height: 100%;
+        }
+
+        .ewm1 {
+            display: inline-block;
+            width: 88px;
+            height: 136px;
+            margin-left: 40px;
+            vertical-align: top;
+        }
+
+        .ewm2 {
+            display: inline-block;
+            width: 88px;
+            height: 136px;
+            margin-left: 40px;
+            vertical-align: top;
+        }
+
+        .ewm3 {
+            display: inline-block;
+            width: 88px;
+            height: 136px;
+            margin-left: 40px;
+            vertical-align: top;
+        }
+
+        .ewm1>img,
+        .ewm2>img,
+        .ewm3>img {
+            width: 88px;
+            height: 88px;
+            border-radius: 8px;
+        }
+
+        .ewm1>.ddd1,
+        .ewm2>.ddd2,
+        .ewm3>.ddd3 {
+            margin-top: 10px;
+            line-height: 17px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .www1 {
+            width: 100%;
+            height: 86px;
+        }
+
+        .www1>div {
+            text-align: center;
+            margin: 0 25px 14px 25px;
+            color: #D4D4D4;
+            font-size: 14px;
+            font-weight: 400
+        }
+
+        .bottom3 {
+            width: 100%;
+            height: 112px;
+            background-color: #242632;
+        }
+
+        .zzzz {
+            width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            color: #D4D4D4;
+        }
+
+        .top22 {
+            padding: 20px 0;
+            text-align: center;
+            color: #D4D4D4;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .bottom33{
+            width: 100%;
+            height: 36px;
+             text-align: center;
+        }
+        .bottom33>img{
+            width: 101px;
+            height: 36px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <!-- 导航栏开始 -->
+        <div class="dhl">
+            <div class="left">
+                <a href="#"><img src="https://www.tf2sc.cn/static/img/%E8%85%BE%E5%8F%91.png" alt=""></a>
+
+                <img src="https://www.tf2sc.cn/static/img/%E5%AE%9A%E4%BD%8D.png" alt="">
+                <span>全国</span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>首页</li>
+                    <li>二手车</li>
+                    <li>新车</li>
+                    <li>卖车</li>
+                    <li>腾发金融</li>
+                    <li>腾发服务</li>
+
+                    <div class="dh">咨询电话<span>400-0606-777</span></div>
+                </ul>
+            </div>
+        </div>
+        <!-- 导航栏结束 -->
+        <!-- 图片部分开始 -->
+        <div class="esc">
+            <div class="tp">
+                <img src="https://www.tf2sc.cn/static/img/%E5%8D%96%E8%BD%A6%E7%9A%84%E5%A5%BD%E5%A4%84.png" alt="">
+                <div class="l1">
+                    <div class="shang">腾发二手车</div>
+                    <div class="zhong">
+                        <input type="text" placeholder="搜索品牌、车型">
+                        <button>搜索</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="xia">
+            <div class="left1">
+                <div class="l2">
+                    <div></div>
+                    <div>我要买车</div>
+                </div>
+                <div class="l3">
+                    <div class="shang1">
+                        <a href="#"><img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/131404527269052416"
+                                alt=""><span>宝马</span></a>
+                        <a href="#"><img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/131409171093389312"
+                                alt=""><span>奔驰</span></a>
+                        <a href="#"><img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/138309812789182464.png"
+                                alt=""><span>奥迪</span></a>
+                        <a href="#"><img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/131410273931100160"
+                                alt=""><span>丰田</span></a>
+                        <a href="#"><img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/131407090047516672"
+                                alt=""><span>路虎</span></a>
+                    </div>
+                    <div class="zhong1">
+                        <span>20万以下</span><span>10-30万</span><span>30-50万</span><span>50万以上</span>
+                    </div>
+                    <div class="xia1">
+                        <span>两厢轿车</span>
+                        <span>跑车</span>
+                        <span>SUV</span>
+                        <span>MPV</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right1">
+                <div class="l4">
+                    <div></div>
+                    <div>我要买车</div>
+                </div>
+                <div class="l5">
+                    <input type="text" placeholder="请输入手机号">
+                    <button>立即估值</button>
+                </div>
+                <div class="l6">
+                    <div class="z1">
+                        <img src="https://www.tf2sc.cn/static/img/%E4%B8%8A%E9%97%A8%E6%9C%8D%E5%8A%A1.png" alt="">
+                        <span>全国代购</span>
+                    </div>
+                    <div class="z2"></div>
+                    <div class="r1">
+                        <img src="https://www.tf2sc.cn/static/img/%E5%88%B0%E5%BA%97%E4%BC%B0%E5%80%BC.png" alt="">
+                        <span>到店估值</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 图片部分结束 -->
+        <!-- 商品部分开始 -->
+        <div class="sp">
+            <div class="shang2">
+                <div class="left2">
+                    <div class="ls"></div>
+                    <span>二手车</span>
+                </div>
+                <div class="right2">
+                    <span>查看更多</span>
+                    <img src="https://www.tf2sc.cn/static/img/icon_%E6%9B%B4%E5%A4%9A.png" alt="">
+                </div>
+            </div>
+            <div class="xia2">
+                <ul>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="th">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/257819713441103872.jpg?x-oss-process=style/watermark"
+                                alt="">
+                            <div class="a1">限时特惠</div>
+                        </div>
+                        <div class="xia3">
+                            <span>2019款 揽胜星脉(进口) 250PS</span>
+                            <span>2019年01月 / 3.16万公里</span>
+                            <span>38.9万</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="xwzx">
+                    <div class="q1">
+                        <div class="q2"></div>
+                        <span>新车</span>
+                    </div>
+                    <div class="q3">
+                        <span>查看更多</span>
+                        <img src="https://www.tf2sc.cn/static/img/icon_%E6%9B%B4%E5%A4%9A.png" alt="">
+                    </div>
+
+                </div>
+                <div class="xc">
+                    <div class="q4">
+                        <div class="q5"></div>
+                        <span>新闻资讯</span>
+                    </div>
+                    <div class="q6">
+                        <span>查看更多</span>
+                        <img src="https://www.tf2sc.cn/static/img/icon_%E6%9B%B4%E5%A4%9A.png" alt="">
+                    </div>
+
+                </div>
+                <div class="ss1">
+                    <div class="zp1">
+                        <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/310109484317933568.jpg" alt="">
+                        <div class="xia4">
+                            <div>高薪诚聘</div>
+                            <div>..</div>
+                            <div>2022-09-22</div>
+                        </div>
+                    </div>
+
+                    <div class="zp2">
+                        <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/290411670293970944.jpg" alt="">
+                        <div class="xia5">
+                            <div>招聘-销售顾问</div>
+                            <div>
+                                【腾发二手车】诚聘销售顾问要求有4S店、二手车行业销售经验～
+                            </div>
+                            <div>
+                                2022-07-30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品部分结束 -->
+        <!-- 底部部分开始 -->
+        <div class="bottom">
+            <div class="bottom1">
+                <div class="aaa1">
+                    <img src="https://www.tf2sc.cn/static/img/tengfa.png" alt="">
+                    <div class="sss1"></div>
+                    <div class="sss2">真实车源</div>
+                    <span>二手车</span>
+                    <span>新闻资讯</span>
+                    <span>常见问题</span>
+                </div>
+                <div class="you"></div>
+            </div>aaa1
+        </div>
+        <div class="bottom2">
+            <div class="center">
+                <div class="qqq1-top">
+                    <div class="zuo">
+                        <div class="yyy1">
+                            <div class="yyy2"> 咨询电话：400-0606-777 </div>
+                            <div class="yyy3">营业时间：周一至周日 早 8:00 - 晚 12:00</div>
+                        </div>
+                    </div>
+                    <div class="you">
+                        <div class="ewm1">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/149815731972734978.jpg" alt="">
+                            <div class="ddd1">关注腾发名车
+                                <br>
+                                微信公众号
+                            </div>
+                        </div>
+                        <div class="ewm2">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/149815731972734978.jpg" alt="">
+                            <div class="ddd2">关注腾发名车
+                                <br>
+                                微信公众号
+                            </div>
+                        </div>
+                        <div class="ewm3">
+                            <img src="https://tfcar.oss-cn-hangzhou.aliyuncs.com/149815731972734978.jpg" alt="">
+                            <div class="ddd3">关注腾发名车
+                                <br>
+                                微信公众号
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="www1">
+                    <div>
+                        腾发二手车以二手车销售、新车销售、汽车分期、汽车保险、维修保养、汽车改装、汽车收购置换为主营业务，是集实体与线上为一体的综合性购车用车销售服务平台。
+                    </div>
+                    <div>
+                        门店地址：【国基路店】郑州市花园路与国基路交汇处西南角 【天伦路店】郑州市花园路与天伦路交汇处向东50米路
+                    </div>
+                    <div>
+                        腾发二手车目前营业面积3万余平实体展厅，近5000平独立的售后服务中心，3000余台的常态库存涵盖各种国际品牌名车。全国二手车经营示范基地，百万车主信赖之选！
+                    </div>
+                </div>
+            </div>
+            <div class="bottom3">
+                <div class="zzzz">
+                    <div class="top22">
+                        Copyright © 2014 - 2021 All Rights Reserved 版权所有
+                    </div>
+                    <div class="bottom33">
+                        <img src="https://www.tf2sc.cn/static/img/cert_02.jpg" alt="">
+                        <img src="https://www.tf2sc.cn/static/img/cert_02.jpg" alt="">
+                        <img src="https://www.tf2sc.cn/static/img/cert_02.jpg" alt="">
+                        <img src="https://www.tf2sc.cn/static/img/cert_02.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
